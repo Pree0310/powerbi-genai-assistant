@@ -9,7 +9,7 @@ import re
 # st.write("Files in current directory:", os.listdir())
 
 # Load CSV file
-csv_path = os.path.join(os.getcwd(), "healthcare.csv")
+csv_path = os.path.join(os.getcwd(), "Healthcare.csv")
 df = pd.read_csv(csv_path)
 
 # Simulate fake embeddings (not used in free mode)
@@ -17,7 +17,7 @@ df['embedding'] = [np.random.rand(1536).tolist() for _ in range(len(df))]
 
 # Streamlit UI
 st.title("Healthcare Q&A Assistant (Free Version)")
-user_question = st.text_input("Ask a question about healthcare data:")
+user_question = st.text_input("Ask a question about Healthcare data:")
 
 # 🔁 Smart Matching Logic (new block)
 if user_question:
